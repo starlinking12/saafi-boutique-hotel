@@ -3,216 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Dining &amp; Restaurant | SAAFI Boutique Hotel, Wuse 2, Abuja</title>
-  <meta name="description" content="Discover African and Continental dining at SAAFI Boutique Hotel. Complimentary breakfast from 7am-11am for all guests, plus all-day room service menu.">
+  <title>Dining &amp; Lounge | SAAFI Boutique Hotel Wuse 2, Abuja</title>
+  <meta name="description" content="African & Continental dining at SAAFI Boutique Hotel. Daily complimentary breakfast from 7:00 AM to 11:00 AM and 24-hour room service on Madiana Close, Wuse 2.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-dining">
-  <!-- Notch-Safe Header -->
+
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand-logo">
-        <span class="brand-monogram">S</span>
-        <div class="brand-text">
-          <span class="brand-title">SAAFI</span>
-          <span class="brand-sub">BOUTIQUE HOTEL &bull; WUSE 2</span>
-        </div>
-      </a>
-      <nav class="desktop-nav">
-        <a href="index.html" class="nav-link">Overview</a>
-        <a href="rooms.html" class="nav-link">Suites</a>
-        <a href="dining.html" class="nav-link active">Dining</a>
-        <a href="meetings.html" class="nav-link">Boardroom</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20inquire%20about%20dining%20and%20table%20reservations." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm desk-chat">
-          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          <span>WhatsApp Desk</span>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon">S</span>
+          <div class="brand-text">
+            <span class="brand-title">SAAFI</span>
+            <span class="brand-sub">BOUTIQUE HOTEL</span>
+          </div>
         </a>
-        <a href="rooms.html" class="btn btn-brass btn-sm">Book a Suite</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="rooms.html" class="nav-link">Rooms</a>
+          <a href="dining.html" class="nav-link active">Dining</a>
+          <a href="meetings.html" class="nav-link">Boardroom</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">WhatsApp Desk</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <div class="container drawer-inner">
-      <div class="drawer-header">
-        <span class="drawer-tagline">SAAFI BOUTIQUE HOTEL &bull; WUSE 2</span>
+  <main style="padding-top: calc(110px + var(--safe-top)); padding-bottom: 80px;">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:760px; margin: 0 auto 56px;">
+        <div class="badge-pill badge-coral-soft section-eyebrow">CULINARY EXCELLENCE</div>
+        <h1 class="section-title">Restaurant &amp; In-Room Dining</h1>
+        <p class="section-desc">Complimentary chef-prepared breakfast for all hotel guests daily from 7:00 AM to 11:00 AM. 24-hour room service featuring authentic Nigerian specialties and continental favorites.</p>
       </div>
-      <nav class="drawer-links">
-        <a href="index.html" class="drawer-link"><span class="drawer-index">01</span><span class="drawer-label">Overview</span></a>
-        <a href="rooms.html" class="drawer-link"><span class="drawer-index">02</span><span class="drawer-label">Suites &amp; Residences</span></a>
-        <a href="dining.html" class="drawer-link"><span class="drawer-index">03</span><span class="drawer-label">Restaurant &amp; Dining</span></a>
-        <a href="meetings.html" class="drawer-link"><span class="drawer-index">04</span><span class="drawer-label">Executive Boardroom</span></a>
-        <a href="contact.html" class="drawer-link"><span class="drawer-index">05</span><span class="drawer-label">Location &amp; Contact</span></a>
-      </nav>
-      <div class="drawer-footer">
-        <p class="drawer-address">No. 6 Madiana Close, Off Dar es Salaam Crescent, Wuse 2, Abuja</p>
-        <div class="drawer-cta-group">
-          <a href="tel:+2348027777456" class="btn btn-outline btn-full">Direct Desk: 0802 777 7456</a>
-          <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Chat on WhatsApp</a>
+
+      <!-- Breakfast Highlight -->
+      <div style="background:var(--bg-card); border:1px solid var(--border-card); border-radius:var(--radius-3xl); overflow:hidden; box-shadow:var(--shadow-card); margin-bottom:56px; display:grid; grid-template-columns:1fr; gap:0;">
+        <div style="height:320px; overflow:hidden;">
+          <img src="https://img.sanishtech.com/u/69727a90e6efbc47df22b2b54a6bb0e4.jpeg" alt="Chef Breakfast Table" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div style="padding:36px 32px;">
+          <div class="badge-pill badge-coral-soft" style="margin-bottom:12px;">INCLUDED WITH EVERY STAY</div>
+          <h2 style="font-size:26px; font-weight:700; color:var(--text-title); margin-bottom:12px;">Chef's Morning Table</h2>
+          <p style="font-size:15px; color:var(--text-body); line-height:1.65; margin-bottom:20px;">Every morning between 7:00 AM and 11:00 AM, guests enjoy custom-cooked eggs and fluffy omelettes, fresh seasonal fruit platters, golden toast with jams, premium tea and brewed coffee, plus classic Nigerian breakfast options.</p>
+          <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20inquire%20about%20dining." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Order In-Room Dining</a>
+        </div>
+      </div>
+
+      <!-- Nigerian Favorites -->
+      <div class="menu-category-block">
+        <h2 class="menu-category-title">
+          <span>Nigerian Specialties</span>
+          <span style="font-size:13px; font-weight:600; color:var(--primary);">Fresh Daily</span>
+        </h2>
+        <div class="menu-items-grid">
+          <div class="menu-card">
+            <div class="menu-top-row">
+              <span class="menu-dish-name">Whole Grilled Catfish with Plantain</span>
+              <span class="menu-dish-price">&#8358;9,500</span>
+            </div>
+            <p class="menu-dish-desc">Freshly spiced and charcoal-grilled whole catfish served with fried ripe plantain, roasted sweet potato wedges, and homemade chili relish.</p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-top-row">
+              <span class="menu-dish-name">Assorted Goat Meat Pepper Soup</span>
+              <span class="menu-dish-price">&#8358;6,500</span>
+            </div>
+            <p class="menu-dish-desc">Aromatic traditional broth infused with authentic calabash nutmeg, Uda seeds, and tender goat cuts, served steaming hot.</p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-top-row">
+              <span class="menu-dish-name">Prime Beef Suya Platter</span>
+              <span class="menu-dish-price">&#8358;7,000</span>
+            </div>
+            <p class="menu-dish-desc">Tender flank steak dry-rubbed in house yaji spice blend, flash-grilled and garnished with fresh red onions and tomatoes.</p>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-top-row">
+              <span class="menu-dish-name">Special SAAFI Fried Rice &amp; Chicken</span>
+              <span class="menu-dish-price">&#8358;6,000</span>
+            </div>
+            <p class="menu-dish-desc">Savory wok-tossed basmati rice with sweet bell peppers, sweetcorn, and liver cubes, accompanied by seasoned grilled quarter chicken.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <main>
-    <section class="page-banner">
-      <div class="container text-center">
-        <span class="section-subtitle">CULINARY AT SAAFI</span>
-        <h1 class="page-title">African &amp; Continental Dining</h1>
-        <p class="page-desc">From our complimentary morning breakfast table to chef-crafted evening dinners, indulge in authentic Nigerian dishes and continental favorites.</p>
-      </div>
-    </section>
-
-    <!-- Breakfast Highlight Section -->
-    <section class="section-stone">
-      <div class="container">
-        <div class="dining-hero-card" data-spring>
-          <div class="dining-hero-text">
-            <span class="section-subtitle">COMPLIMENTARY DAILY</span>
-            <h2 class="section-title">The Morning Breakfast Table</h2>
-            <p>Every room reservation at SAAFI Boutique Hotel includes our freshly prepared daily breakfast, served from <strong>7:00 AM to 11:00 AM</strong>. Guests can choose from full English, continental, American, and Halal options.</p>
-            <div class="breakfast-options-list">
-              <div class="bfast-item">
-                <strong>Full English / Continental:</strong> Eggs made to order, baked beans, sausages, toasted bread, butter, jam, and fresh fruits.
-              </div>
-              <div class="bfast-item">
-                <strong>Nigerian Morning Staples:</strong> Yam and eggs, plantain frittata, tea, and brewed rich coffee.
-              </div>
-              <div class="bfast-item">
-                <strong>Beverage Bar:</strong> Fresh juice, tea selection, and rich brewed coffee.
-              </div>
-            </div>
-          </div>
-          <div class="dining-hero-img" style="background-image: url('https://img.sanishtech.com/u/544697eae7d086c29dca5568b399285f.jpeg');"></div>
-        </div>
-
-        <!-- Menu Ledger Grid -->
-        <div class="menu-sections-wrapper" style="margin-top: 60px;">
-          <div class="section-header text-center" data-spring>
-            <span class="section-subtitle">ALL-DAY DINING &amp; ROOM SERVICE</span>
-            <h2 class="section-title">Selected Signature Dishes</h2>
-            <p class="section-desc">Available for lunch and dinner in the dining salon or delivered straight to your room.</p>
-          </div>
-
-          <div class="menu-grid" data-spring>
-            <div class="menu-col-card">
-              <h3 class="menu-cat-title">Nigerian Delicacies</h3>
-              <ul class="menu-items-list">
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Grilled Whole Catfish &amp; Chips</span>
-                  </div>
-                  <p class="item-desc">Marinated in native spices, slow grilled, served with spiced pepper sauce and yam or potato chips.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Goat Meat Pepper Soup</span>
-                  </div>
-                  <p class="item-desc">Tender cuts of goat simmered in hot aromatic herbs, scent leaf, and traditional spices.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Smoky Jollof Rice with Tender Chicken</span>
-                  </div>
-                  <p class="item-desc">Firewood-style Nigerian jollof rice served with fried plantain (dodo) and spiced chicken.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Executive Beef Suya Skewers</span>
-                  </div>
-                  <p class="item-desc">Tender flank steak tossed in authentic Northern yaji spice, served with sliced onions and tomatoes.</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="menu-col-card">
-              <h3 class="menu-cat-title">Continental &amp; Grills</h3>
-              <ul class="menu-items-list">
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Creamy Chicken Alfredo Pasta</span>
-                  </div>
-                  <p class="item-desc">Penne tossed in garlic parmesan cream sauce, seasoned grilled chicken breast, and fresh parsley.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">SAAFI Triple-Decker Club Sandwich</span>
-                  </div>
-                  <p class="item-desc">Toasted bread with grilled chicken, crispy bacon, egg, lettuce, tomatoes, and golden french fries.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Gourmet Beef Burger</span>
-                  </div>
-                  <p class="item-desc">Charbroiled beef patty, melted cheddar, caramelized onions, house relish, in a brioche bun with fries.</p>
-                </li>
-                <li class="menu-item">
-                  <div class="item-head">
-                    <span class="item-name">Fresh Garden Salad with Grilled Prawns</span>
-                  </div>
-                  <p class="item-desc">Crisp greens, cherry tomatoes, cucumbers, jumbo prawns, and light honey-dijon vinaigrette.</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h3 class="footer-heading">SAAFI BOUTIQUE HOTEL</h3>
-        <p class="footer-desc">A contemporary boutique sanctuary built in 2024 on serene Madiana Close, off Dar es Salaam Crescent, Wuse 2, Abuja.</p>
-        <span class="footer-badge"><span class="badge-dot"></span> 24/7 Silent Generator Power</span>
-      </div>
-      <div class="footer-col">
-        <h4 class="col-title">Navigation</h4>
-        <ul class="footer-nav">
-          <li><a href="index.html">Overview</a></li>
-          <li><a href="rooms.html">Suites &amp; Residences</a></li>
-          <li><a href="dining.html">Dining &amp; Lounge</a></li>
-          <li><a href="meetings.html">Boardroom</a></li>
-          <li><a href="contact.html">Concierge &amp; Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="col-title">Direct Reservations</h4>
-        <ul class="footer-contact-list">
-          <li><span>WhatsApp Desk:</span> <a href="https://wa.me/2348027777456">+234 802 777 7456</a></li>
-          <li><span>Front Desk Line:</span> <a href="tel:+2349031595162">+234 903 159 5162</a></li>
-          <li><span>Official Email:</span> <a href="mailto:reservationsaafihotel@gmail.com">reservationsaafihotel@gmail.com</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="col-title">Location</h4>
-        <address class="footer-address">
-          No. 6 Madiana Close,<br>
-          Off Dar es Salaam Crescent,<br>
-          Off Aminu Kano Crescent,<br>
-          Wuse 2, Abuja, Nigeria.
-        </address>
-      </div>
-    </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 SAAFI Boutique Hotel. All rights reserved.</p>
-      <p>Contemporary Luxury in Wuse 2, Abuja</p>
+      <p>No. 6 Madiana Close, Off Dar es Salaam Crescent, Wuse 2, Abuja</p>
     </div>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
