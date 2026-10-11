@@ -1,1 +1,2 @@
-/* SAAFI Boutique Hotel - Router, Suite Data & Spring Engine */
+/* SAAFI Boutique Hotel - App Logic and Spring Engine */
+export const SUMTIES = {};
