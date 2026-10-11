@@ -131,8 +131,8 @@ button, input, select, textarea {
   left: 0;
   right: 0;
   z-index: 100;
-  padding-top: max(16px, var(--safe-top));
-  padding-bottom: 12px;
+  padding-top: max(14px, var(--safe-top));
+  padding-bottom: 10px;
   pointer-events: none;
   transition: all 0.3s ease;
 }
@@ -144,22 +144,31 @@ button, input, select, textarea {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-nav);
-  padding: 8px 12px 8px 20px;
+  padding: 8px 12px 8px 16px;
   pointer-events: auto;
+  gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 6px 8px 6px 14px;
+    border: 1px solid rgba(228, 231, 235, 0.9);
+  }
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .brand-icon {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-pill);
   background: var(--primary);
   display: flex;
@@ -167,12 +176,14 @@ button, input, select, textarea {
   justify-content: center;
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   box-shadow: 0 4px 12px var(--primary-glow);
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
 }
 
 .brand-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--text-title);
@@ -181,8 +192,8 @@ button, input, select, textarea {
 }
 
 .brand-sub {
-  font-size: 9.5px;
-  letter-spacing: 0.12em;
+  font-size: 9px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--primary);
@@ -230,7 +241,19 @@ button, input, select, textarea {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Hide the Explore rooms button on mobile header to avoid crowded pill */
+.header-actions .btn-header-cta {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-actions .btn-header-cta {
+    display: inline-flex;
+  }
 }
 
 .header-actions .desk-tel {
@@ -406,14 +429,15 @@ button, input, select, textarea {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border: 1px solid var(--border-card);
   border-radius: var(--radius-pill);
   background: #FFFFFF;
   cursor: pointer;
   padding: 0;
   z-index: 105;
+  flex-shrink: 0;
 }
 
 @media (min-width: 992px) {
@@ -447,7 +471,7 @@ button, input, select, textarea {
   -webkit-backdrop-filter: blur(28px);
   display: flex;
   flex-direction: column;
-  padding-top: calc(90px + var(--safe-top));
+  padding-top: calc(85px + var(--safe-top));
   padding-bottom: calc(32px + var(--safe-bottom));
   padding-left: 24px;
   padding-right: 24px;
