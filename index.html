@@ -3,101 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>SAAFI Boutique Hotel | Contemporary Luxury in Wuse 2, Abuja</title>
-  <meta name="description" content="SAAFI Boutique Hotel is a contemporary luxury residence built in 2024 on Madiana Close, Wuse 2, Abuja. Rated 9.1 for location with 24/7 silent generator power, high-speed fiber Wi-Fi, and complimentary breakfast.">
+  <title>SAAFI Boutique Hotel | Luxury Residences in Wuse 2, Abuja</title>
+  <meta name="description" content="Contemporary boutique residence built in 2024 on quiet Madiana Close, Wuse 2, Abuja. Rated 9.1 for location with 24/7 silent generator power, high-speed fiber Wi-Fi, and complimentary breakfast.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-home">
-  <!-- Notch-Safe Header -->
+
+  <!-- Floating Pill Header (Rental X Design) -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand-logo">
-        <span class="brand-monogram">S</span>
-        <div class="brand-text">
-          <span class="brand-title">SAAFI</span>
-          <span class="brand-sub">BOUTIQUE HOTEL &bull; WUSE 2</span>
-        </div>
-      </a>
-      <nav class="desktop-nav">
-        <a href="index.html" class="nav-link active">Overview</a>
-        <a href="rooms.html" class="nav-link">Suites</a>
-        <a href="dining.html" class="nav-link">Dining</a>
-        <a href="meetings.html" class="nav-link">Boardroom</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20inquire%20about%20suite%20availability." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm desk-chat">
-          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          <span>WhatsApp Desk</span>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-icon">S</span>
+          <div class="brand-text">
+            <span class="brand-title">SAAFI</span>
+            <span class="brand-sub">BOUTIQUE HOTEL</span>
+          </div>
         </a>
-        <a href="rooms.html" class="btn btn-brass btn-sm">Book a Suite</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="rooms.html" class="nav-link">Rooms</a>
+          <a href="dining.html" class="nav-link">Dining</a>
+          <a href="meetings.html" class="nav-link">Boardroom</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="tel:+2348027777456" class="desk-tel">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0802 777 7456</span>
+          </a>
+          <a href="rooms.html" class="btn btn-primary btn-sm">Explore rooms</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Navigation Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
-    <div class="container drawer-inner">
-      <div class="drawer-header">
-        <span class="drawer-tagline">SAAFI BOUTIQUE HOTEL &bull; WUSE 2</span>
-      </div>
-      <nav class="drawer-links">
-        <a href="index.html" class="drawer-link"><span class="drawer-index">01</span><span class="drawer-label">Overview</span></a>
-        <a href="rooms.html" class="drawer-link"><span class="drawer-index">02</span><span class="drawer-label">Suites &amp; Residences</span></a>
-        <a href="dining.html" class="drawer-link"><span class="drawer-index">03</span><span class="drawer-label">Restaurant &amp; Dining</span></a>
-        <a href="meetings.html" class="drawer-link"><span class="drawer-index">04</span><span class="drawer-label">Executive Boardroom</span></a>
-        <a href="contact.html" class="drawer-link"><span class="drawer-index">05</span><span class="drawer-label">Location &amp; Contact</span></a>
-      </nav>
-      <div class="drawer-footer">
-        <p class="drawer-address">No. 6 Madiana Close, Off Dar es Salaam Crescent, Wuse 2, Abuja</p>
-        <div class="drawer-cta-group">
-          <a href="tel:+2348027777456" class="btn btn-outline btn-full">Direct Desk: 0802 777 7456</a>
-          <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Chat on WhatsApp</a>
-        </div>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link"><span>Home</span> <span>&rarr;</span></a>
+      <a href="rooms.html" class="drawer-link"><span>Suites &amp; Rooms</span> <span>&rarr;</span></a>
+      <a href="dining.html" class="drawer-link"><span>Dining &amp; Lounge</span> <span>&rarr;</span></a>
+      <a href="meetings.html" class="drawer-link"><span>Executive Boardroom</span> <span>&rarr;</span></a>
+      <a href="contact.html" class="drawer-link"><span>Location &amp; Contact</span> <span>&rarr;</span></a>
+    </div>
+    <div class="drawer-contact">
+      <p><strong>SAAFI Boutique Hotel</strong><br>No. 6 Madiana Close, Off Dar es Salaam Crescent, Wuse 2, Abuja</p>
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <a href="tel:+2348027777456" class="btn btn-outline btn-full">Call Front Desk: 0802 777 7456</a>
+        <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20inquire%20about%20suite%20reservations." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full">Chat on WhatsApp</a>
       </div>
     </div>
   </div>
 
   <main>
-    <!-- Flagship Hero Section -->
-    <section class="hero-section" id="hero">
-      <div class="hero-bg" style="background-image: linear-gradient(180deg, rgba(20, 23, 31, 0.45) 0%, rgba(20, 23, 31, 0.94) 100%), url('https://img.sanishtech.com/u/6cb6d01936c80b08fff574891d880fa1.jpeg');"></div>
-      <div class="container hero-content">
-        <div class="hero-tagline" data-spring>
-          <span class="tag-line-dot"></span>
-          <span>BUILT IN 2024 &bull; CONTEMPORARY LUXURY IN WUSE 2, ABUJA</span>
-        </div>
-        <h1 class="hero-title" data-spring>Recharge &amp; Unwind at SAAFI Boutique Hotel.</h1>
-        <p class="hero-sub" data-spring>A peaceful boutique sanctuary tucked into quiet Madiana Close, off Dar es Salaam Crescent. Rated 9.1 for location in Wuse 2, featuring 24/7 silent backup power, bespoke suites, and attentive personalized service.</p>
-
-        <!-- Social Proof Stats Pill -->
-        <div class="trust-stats-pill" data-spring>
-          <div class="stat-bubble">
-            <span class="stat-score">8.2 / 10</span>
-            <span class="stat-context">Very Good (75+ Verified Reviews)</span>
+    <!-- Full-Bleed Hero Banner (Rental X Style) -->
+    <section class="hero-section" style="background-image: url('https://img.sanishtech.com/u/6cb6d01936c80b08fff574891d880fa1.jpeg');">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>BUILT IN 2024 &bull; BOUTIQUE LUXURY IN WUSE 2, ABUJA</span>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-bubble">
-            <span class="stat-score">9.1 / 10</span>
-            <span class="stat-context">Location Rating in Wuse 2</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-bubble">
-            <span class="stat-score">2024</span>
-            <span class="stat-context">Brand-New Build</span>
+          <h1 class="hero-title">Recharge &amp; Unwind at SAAFI Boutique Hotel.</h1>
+          <p class="hero-sub">A contemporary sanctuary tucked into serene Madiana Close, off Dar es Salaam Crescent. Rated 9.1 for location, featuring 24/7 silent generator power, bespoke luxury suites, and attentive personalized service.</p>
+          <div class="hero-actions">
+            <a href="rooms.html" class="btn btn-primary btn-lg">Explore rooms</a>
+            <a href="#about" class="btn btn-outline btn-lg" style="background: rgba(255,255,255,0.15); color:#fff; border-color: rgba(255,255,255,0.3); backdrop-filter: blur(8px);">About us</a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Integrated Booking Bar -->
-        <div class="booking-card" id="booking" data-spring>
-          <div class="booking-form-grid">
+    <!-- Integrated Booking Search Bar (Rental X Style) -->
+    <section class="booking-bar-wrapper">
+      <div class="container">
+        <div class="booking-bar-card">
+          <div class="booking-bar-grid">
             <div class="booking-field">
               <label for="checkInInput">CHECK-IN</label>
               <input type="date" id="checkInInput" value="2026-10-12">
@@ -109,7 +100,7 @@
             <div class="booking-field">
               <label for="suiteSelect">ROOM CATEGORY</label>
               <select id="suiteSelect">
-                <option value="signature-room">Standard King Room (&#8358;85,950)</option>
+                <option value="signature-room">Signature Standard King (&#8358;85,950)</option>
                 <option value="deluxe-plus">Deluxe Double with Balcony (&#8358;93,500)</option>
                 <option value="deluxe-royal">Deluxe King Room (&#8358;115,250)</option>
                 <option value="executive-suite">Executive Suite with Kitchenette (&#8358;145,790)</option>
@@ -124,406 +115,449 @@
                 <option value="3">3 Adults</option>
               </select>
             </div>
-            <div class="booking-submit">
-              <button class="btn btn-brass btn-full" id="bookingSubmitBtn">Reserve Direct</button>
+            <div class="booking-field">
+              <button class="btn btn-primary btn-full" id="bookingSubmitBtn" style="padding: 13px 20px;">Book now</button>
             </div>
+          </div>
+          <div class="booking-bar-summary">
+            <span>Verified Booking.com location rating: <strong>9.1 / 10</strong></span>
+            <span>24/7 Silent Generator Power &bull; Free High-Speed Fiber Wi-Fi</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Suites Preview Section -->
-    <section class="section-stone" id="suites">
+    <!-- Explore Our Cabins / Suites (Rental X Card Style) -->
+    <section class="section section-page" id="rooms">
       <div class="container">
-        <div class="section-header" data-spring>
-          <span class="section-subtitle">THE RESIDENCES</span>
-          <h2 class="section-title">Explore Our Contemporary Suites</h2>
-          <p class="section-desc">Completed in 2024, each room features orthopaedic king bedding, silent air conditioning, ensuite walk-in shower, dedicated in-room tea and coffee maker, electric kettle, and fiber Wi-Fi.</p>
+        <div class="section-header-split">
+          <div>
+            <div class="badge-pill badge-coral-soft section-eyebrow">THE RESIDENCES</div>
+            <h2 class="section-title">Explore our boutique rooms</h2>
+            <p class="section-desc">Completed in 2024, each room features orthopaedic king bedding, silent air conditioning, ensuite walk-in shower, dedicated in-room tea and coffee maker, electric kettle, and fiber Wi-Fi.</p>
+          </div>
+          <div>
+            <a href="rooms.html" class="btn btn-outline">Browse all rooms &rarr;</a>
+          </div>
         </div>
 
         <div class="suites-grid">
-          <!-- Suite 1 -->
-          <div class="suite-card" data-spring>
-            <div class="suite-card-image" style="background-image: url('https://img.sanishtech.com/u/6f05d53145e0467e8e8ae3629764efbe.jpeg');">
-              <span class="suite-category-badge">Standard King</span>
-              <span class="suite-rate-badge">&#8358;85,950 <small>/ night</small></span>
+          <!-- Room Card 1 -->
+          <div class="suite-card">
+            <div class="suite-card-media">
+              <img src="https://img.sanishtech.com/u/6f05d53145e0467e8e8ae3629764efbe.jpeg" alt="Signature Room - SAAFI Boutique Hotel">
+              <span class="badge-pill badge-white suite-card-badge">Standard King</span>
             </div>
             <div class="suite-card-body">
               <h3 class="suite-card-title">Signature Room</h3>
               <p class="suite-card-desc">An elegantly appointed retreat designed for executive travelers and discerning solo guests seeking tranquility in Wuse 2.</p>
-              <div class="suite-spec-strip">
-                <span>2 Adults</span>
-                <span class="bullet">&bull;</span>
-                <span>1 Queen Bed</span>
-                <span class="bullet">&bull;</span>
-                <span>28 m&sup2;</span>
+              <div class="suite-specs-strip">
+                <span class="spec-chip">2 Guests</span>
+                <span class="spec-chip">1 King Bed</span>
+                <span class="spec-chip">28 m&sup2;</span>
               </div>
-              <div class="suite-card-actions">
-                <a href="rooms/signature-room.html" class="btn btn-outline-dark btn-full">View Details</a>
-                <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20Signature%20Room%20at%20%E2%82%A685%2C950%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Reserve Direct</a>
+              <div class="suite-card-footer">
+                <div class="suite-price-block">
+                  <span class="suite-price">&#8358;85,950</span>
+                  <span class="suite-price-period">/ night</span>
+                </div>
+                <div class="suite-card-actions">
+                  <a href="rooms/signature-room.html" class="btn btn-outline btn-sm">Details</a>
+                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20reserve%20the%20Signature%20Room%20at%20%E2%82%A685,950%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Book now</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Suite 2 -->
-          <div class="suite-card" data-spring style="transition-delay: 0.1s;">
-            <div class="suite-card-image" style="background-image: url('https://img.sanishtech.com/u/3d5775a09d59b5f1d8658785c827a762.jpeg');">
-              <span class="suite-category-badge">Balcony View</span>
-              <span class="suite-rate-badge">&#8358;93,500 <small>/ night</small></span>
+          <!-- Room Card 2 -->
+          <div class="suite-card">
+            <div class="suite-card-media">
+              <img src="https://img.sanishtech.com/u/3d5775a09d59b5f1d8658785c827a762.jpeg" alt="Deluxe Plus - SAAFI Boutique Hotel">
+              <span class="badge-pill badge-white suite-card-badge">Balcony View</span>
             </div>
             <div class="suite-card-body">
               <h3 class="suite-card-title">Deluxe Plus</h3>
               <p class="suite-card-desc">Generous square footage paired with a private balcony outlook, dedicated lounge corner, quiet courtyard ambiance, and king bedding.</p>
-              <div class="suite-spec-strip">
-                <span>2 Adults</span>
-                <span class="bullet">&bull;</span>
-                <span>1 Double Bed</span>
-                <span class="bullet">&bull;</span>
-                <span>34 m&sup2;</span>
+              <div class="suite-specs-strip">
+                <span class="spec-chip">2 Guests</span>
+                <span class="spec-chip">1 Double Bed</span>
+                <span class="spec-chip">34 m&sup2;</span>
               </div>
-              <div class="suite-card-actions">
-                <a href="rooms/deluxe-plus.html" class="btn btn-outline-dark btn-full">View Details</a>
-                <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20Deluxe%20Plus%20at%20%E2%82%A693%2C500%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Reserve Direct</a>
+              <div class="suite-card-footer">
+                <div class="suite-price-block">
+                  <span class="suite-price">&#8358;93,500</span>
+                  <span class="suite-price-period">/ night</span>
+                </div>
+                <div class="suite-card-actions">
+                  <a href="rooms/deluxe-plus.html" class="btn btn-outline btn-sm">Details</a>
+                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20reserve%20the%20Deluxe%20Plus%20at%20%E2%82%A693,500%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Book now</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Suite 3 -->
-          <div class="suite-card" data-spring style="transition-delay: 0.15s;">
-            <div class="suite-card-image" style="background-image: url('https://img.sanishtech.com/u/99c0226e73c24460bb192d0b78431cb1.jpeg');">
-              <span class="suite-category-badge">Deluxe King</span>
-              <span class="suite-rate-badge">&#8358;115,250 <small>/ night</small></span>
+          <!-- Room Card 3 -->
+          <div class="suite-card">
+            <div class="suite-card-media">
+              <img src="https://img.sanishtech.com/u/99c0226e73c24460bb192d0b78431cb1.jpeg" alt="Deluxe Royal - SAAFI Boutique Hotel">
+              <span class="badge-pill badge-white suite-card-badge">Deluxe King</span>
             </div>
             <div class="suite-card-body">
               <h3 class="suite-card-title">Deluxe Royal</h3>
               <p class="suite-card-desc">Bespoke elegance featuring a private outdoor balcony overlooking serene gardens, walk-in rainfall shower, and custom minibar.</p>
-              <div class="suite-spec-strip">
-                <span>2 Adults</span>
-                <span class="bullet">&bull;</span>
-                <span>Emperor King</span>
-                <span class="bullet">&bull;</span>
-                <span>42 m&sup2;</span>
+              <div class="suite-specs-strip">
+                <span class="spec-chip">2 Guests</span>
+                <span class="spec-chip">Emperor King</span>
+                <span class="spec-chip">42 m&sup2;</span>
               </div>
-              <div class="suite-card-actions">
-                <a href="rooms/deluxe-royal.html" class="btn btn-outline-dark btn-full">View Details</a>
-                <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20Deluxe%20Royal%20at%20%E2%82%A6115%2C250%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Reserve Direct</a>
+              <div class="suite-card-footer">
+                <div class="suite-price-block">
+                  <span class="suite-price">&#8358;115,250</span>
+                  <span class="suite-price-period">/ night</span>
+                </div>
+                <div class="suite-card-actions">
+                  <a href="rooms/deluxe-royal.html" class="btn btn-outline btn-sm">Details</a>
+                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20reserve%20the%20Deluxe%20Royal%20at%20%E2%82%A6115,250%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Book now</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Suite 4 -->
-          <div class="suite-card" data-spring style="transition-delay: 0.2s;">
-            <div class="suite-card-image" style="background-image: url('https://img.sanishtech.com/u/9e9a6a6d8f415d144f6567469a32f913.jpeg');">
-              <span class="suite-category-badge">Private Kitchenette</span>
-              <span class="suite-rate-badge">&#8358;145,790 <small>/ night</small></span>
+          <!-- Room Card 4 -->
+          <div class="suite-card">
+            <div class="suite-card-media">
+              <img src="https://img.sanishtech.com/u/9e9a6a6d8f415d144f6567469a32f913.jpeg" alt="Executive Suite - SAAFI Boutique Hotel">
+              <span class="badge-pill badge-white suite-card-badge">Private Kitchenette</span>
             </div>
             <div class="suite-card-body">
               <h3 class="suite-card-title">Executive Suite</h3>
               <p class="suite-card-desc">The pinnacle of SAAFI luxury. A separate living and dining salon, private in-suite kitchenette, executive work desk, and master bedroom.</p>
-              <div class="suite-spec-strip">
-                <span>2-3 Adults</span>
-                <span class="bullet">&bull;</span>
-                <span>Master King</span>
-                <span class="bullet">&bull;</span>
-                <span>56 m&sup2;</span>
+              <div class="suite-specs-strip">
+                <span class="spec-chip">2-3 Guests</span>
+                <span class="spec-chip">Master King</span>
+                <span class="spec-chip">56 m&sup2;</span>
               </div>
-              <div class="suite-card-actions">
-                <a href="rooms/executive-suite.html" class="btn btn-outline-dark btn-full">View Details</a>
-                <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20Executive%20Suite%20at%20%E2%82%A6145%2C790%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Reserve Direct</a>
+              <div class="suite-card-footer">
+                <div class="suite-price-block">
+                  <span class="suite-price">&#8358;145,790</span>
+                  <span class="suite-price-period">/ night</span>
+                </div>
+                <div class="suite-card-actions">
+                  <a href="rooms/executive-suite.html" class="btn btn-outline btn-sm">Details</a>
+                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20reserve%20the%20Executive%20Suite%20at%20%E2%82%A6145,790%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Book now</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div style="margin-top: 40px; text-align: center;" data-spring>
-          <a href="rooms.html" class="btn btn-outline-dark">Explore Full Accommodation Directory</a>
-        </div>
       </div>
     </section>
 
-    <!-- Amenities 01 - 06 Section -->
-    <section class="section-noir" id="amenities">
+    <!-- Come and Enjoy a One of a Kind Experience (Rental X Style) -->
+    <section class="section section-white" id="about">
       <div class="container">
-        <div class="section-header text-center" data-spring>
-          <span class="section-subtitle">THE SAAFI STANDARD</span>
-          <h2 class="section-title">Designed for Uncompromising Comfort</h2>
-          <p class="section-desc">From reliable infrastructure to thoughtful personal touches, every amenity is in place for an effortless stay.</p>
+        <div class="section-header text-center">
+          <div class="badge-pill badge-coral-soft section-eyebrow">THE SAAFI EXPERIENCE</div>
+          <h2 class="section-title">Come and enjoy a one of a kind experience</h2>
+          <p class="section-desc">From reliable 24/7 infrastructure to thoughtful personal touches, every amenity is in place for an effortless and restorative stay in the heart of Abuja.</p>
         </div>
 
         <div class="amenities-grid">
-          <div class="amenity-card" data-spring>
-            <span class="amenity-num">01</span>
-            <h3 class="amenity-name">African &amp; Continental Dining</h3>
-            <p class="amenity-text">Complimentary chef-prepared breakfast served daily from 7:00 AM to 11:00 AM (Full English, Continental, and Halal options), plus 24-hour in-room dining.</p>
+          <!-- Amenity 1 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              </div>
+              <span class="amenity-number">01</span>
+            </div>
+            <h3 class="amenity-title">African &amp; Continental Dining</h3>
+            <p class="amenity-text">Complimentary chef-prepared breakfast served daily from 7:00 AM to 11:00 AM, plus 24-hour in-room dining featuring Nigerian favorites and continental cuisine.</p>
           </div>
-          <div class="amenity-card" data-spring style="transition-delay: 0.1s;">
-            <span class="amenity-num">02</span>
-            <h3 class="amenity-name">24/7 Silent Backup Power</h3>
+
+          <!-- Amenity 2 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <span class="amenity-number">02</span>
+            </div>
+            <h3 class="amenity-title">24/7 Silent Backup Power</h3>
             <p class="amenity-text">Dual soundproof commercial generators paired with automated transfer switches guarantee continuous air conditioning, hot water, and lighting day and night.</p>
           </div>
-          <div class="amenity-card" data-spring style="transition-delay: 0.15s;">
-            <span class="amenity-num">03</span>
-            <h3 class="amenity-name">Massage Chair Relaxation Lounge</h3>
+
+          <!-- Amenity 3 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v 8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3"></path></svg>
+              </div>
+              <span class="amenity-number">03</span>
+            </div>
+            <h3 class="amenity-title">Massage Chair Relaxation</h3>
             <p class="amenity-text">Decompress after business meetings or international travel in our dedicated full-body massage chairs situated in the hotel relaxation foyer.</p>
           </div>
-          <div class="amenity-card" data-spring style="transition-delay: 0.2s;">
-            <span class="amenity-num">04</span>
-            <h3 class="amenity-name">High-Speed Fiber &amp; Elevator</h3>
+
+          <!-- Amenity 4 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+              </div>
+              <span class="amenity-number">04</span>
+            </div>
+            <h3 class="amenity-title">High-Speed Fiber &amp; Elevator</h3>
             <p class="amenity-text">Dedicated commercial fiber-optic Wi-Fi throughout all rooms and public lounges, paired with smooth elevator access to all guest floors.</p>
           </div>
-          <div class="amenity-card" data-spring style="transition-delay: 0.25s;">
-            <span class="amenity-num">05</span>
-            <h3 class="amenity-name">In-Room Tea, Coffee &amp; Fridge</h3>
+
+          <!-- Amenity 5 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <span class="amenity-number">05</span>
+            </div>
+            <h3 class="amenity-title">In-Room Tea, Coffee &amp; Fridge</h3>
             <p class="amenity-text">Every suite is equipped with a private electric kettle, tea and coffee maker, mini refrigerator, flat-screen Smart TV, and executive workspace.</p>
           </div>
-          <div class="amenity-card" data-spring style="transition-delay: 0.3s;">
-            <span class="amenity-num">06</span>
-            <h3 class="amenity-name">Secure Gated Sanctuary</h3>
+
+          <!-- Amenity 6 -->
+          <div class="amenity-card">
+            <div class="amenity-top">
+              <div class="amenity-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <span class="amenity-number">06</span>
+            </div>
+            <h3 class="amenity-title">Secure Gated Sanctuary</h3>
             <p class="amenity-text">Situated in a quiet residential cul-de-sac on Madiana Close with round-the-clock security personnel, CCTV coverage, and complimentary private parking.</p>
           </div>
         </div>
+
+        <!-- Full-Bleed Experience Feature Cards (Rental X Kayak / Activity Style) -->
+        <div class="experience-grid">
+          <div class="experience-photo-card">
+            <img src="https://img.sanishtech.com/u/544697eae7d086c29dca5568b399285f.jpeg" alt="Executive Boardroom at SAAFI Boutique Hotel">
+            <div class="experience-photo-overlay"></div>
+            <div class="experience-photo-content">
+              <span class="badge-pill badge-coral" style="margin-bottom:12px;">EXECUTIVE FACILITIES</span>
+              <h3 class="experience-photo-title">The SAAFI Boardroom</h3>
+              <p class="experience-photo-desc">Host high-level board meetings, investor sessions, and private summits for up to 18 delegates with 4K projection, conference Wi-Fi, and catering.</p>
+              <a href="meetings.html" class="btn btn-primary btn-sm">Explore Boardroom &rarr;</a>
+            </div>
+          </div>
+
+          <div class="experience-photo-card">
+            <img src="https://img.sanishtech.com/u/fac4a4792073a51abaf7f653e8062877.jpeg" alt="Chef Dining & Room Service at SAAFI Boutique Hotel">
+            <div class="experience-photo-overlay"></div>
+            <div class="experience-photo-content">
+              <span class="badge-pill badge-coral" style="margin-bottom:12px;">CULINARY EXCELLENCE</span>
+              <h3 class="experience-photo-title">Restaurant &amp; Room Service</h3>
+              <p class="experience-photo-desc">Savor chef-crafted African and continental dishes, fresh grilled catfish, hearty pepper soup, and chilled drinks served straight to your suite.</p>
+              <a href="dining.html" class="btn btn-primary btn-sm">View Menu &rarr;</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Verified Guest Reviews (Booking.com) -->
-    <section class="section-stone" id="reviews">
+    <!-- Topographic Coral Red Banner Card (Signature Rental X CTA) -->
+    <section class="section section-page">
       <div class="container">
-        <div class="section-header text-center" data-spring>
-          <span class="section-subtitle">GUEST REVIEWS</span>
-          <h2 class="section-title">What Verified Guests Say</h2>
-          <p class="section-desc">Independent ratings and real feedback from travelers who stayed at SAAFI Boutique Hotel on Madiana Close.</p>
+        <div class="promo-banner-card">
+          <svg class="promo-banner-svg" viewBox="0 0 1000 300" preserveAspectRatio="none" fill="none" stroke="#FFFFFF" stroke-width="1.5">
+            <path d="M0,50 Q250,150 500,50 T1000,50" />
+            <path d="M0,100 Q250,200 500,100 T1000,100" />
+            <path d="M0,150 Q250,250 500,150 T1000,150" />
+            <path d="M0,200 Q250,50 500,200 T1000,200" />
+            <path d="M0,250 Q250,100 500,250 T1000,250" />
+          </svg>
+          <div class="promo-banner-content">
+            <h2 class="promo-banner-title">Recharge your energies in our boutique sanctuary</h2>
+            <p class="promo-banner-desc">Reserve your stay directly with our Wuse 2 front desk for guaranteed room availability, early check-in consideration, and personalized concierge care.</p>
+            <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+              <a href="rooms.html" class="btn btn-white btn-lg">Explore rooms</a>
+              <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel,%20I%20would%20like%20to%20book%20a%20suite%20directly." target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="background:transparent; color:#fff; border-color:#fff;">WhatsApp Concierge</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Guest Reviews (Rental X Testimonial Card Style) -->
+    <section class="section section-white" id="reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill badge-coral-soft section-eyebrow">VERIFIED REVIEWS</div>
+          <h2 class="section-title">What our guests say about us</h2>
+          <p class="section-desc">Independent guest ratings and verified feedback from international and executive travelers who stayed at SAAFI Boutique Hotel on Madiana Close.</p>
         </div>
 
         <div class="reviews-grid">
-          <div class="review-card" data-spring>
-            <div class="review-header">
-              <div class="reviewer-meta">
-                <span class="reviewer-name">Matthew</span>
-                <span class="reviewer-country">United States &bull; Verified Stay</span>
-              </div>
-              <span class="review-badge">10 / 10</span>
-            </div>
-            <p class="review-quote">&ldquo;Excellent A-C, good Wi-Fi, strong water pressure and plenty of hot water. Spacious room, clean and modern (built in 2024), quiet and safe.&rdquo;</p>
-          </div>
-
-          <div class="review-card" data-spring style="transition-delay: 0.1s;">
-            <div class="review-header">
-              <div class="reviewer-meta">
-                <span class="reviewer-name">Suleiman</span>
-                <span class="reviewer-country">United Kingdom &bull; Verified Stay</span>
-              </div>
-              <span class="review-badge">10 / 10</span>
-            </div>
-            <p class="review-quote">&ldquo;I truly appreciated the contemporary and elegant design of SAAFI Boutique Hotel. The meticulous attention to detail in the decor and furnishings contributed to a luxurious and comfortable experience. The staff's personalized service was exceptional.&rdquo;</p>
-          </div>
-
-          <div class="review-card" data-spring style="transition-delay: 0.15s;">
-            <div class="review-header">
-              <div class="reviewer-meta">
-                <span class="reviewer-name">Chinaka</span>
-                <span class="reviewer-country">United States &bull; Verified Stay</span>
-              </div>
-              <span class="review-badge">9.5 / 10</span>
-            </div>
-            <p class="review-quote">&ldquo;The food was reasonably priced and delicious. Central location in a quiet, safe neighborhood, and fantastic staff who attended to every request.&rdquo;</p>
-          </div>
-
-          <div class="review-card" data-spring style="transition-delay: 0.2s;">
-            <div class="review-header">
-              <div class="reviewer-meta">
-                <span class="reviewer-name">Abubakar</span>
-                <span class="reviewer-country">United Kingdom &bull; Verified Stay</span>
-              </div>
-              <span class="review-badge">9.8 / 10</span>
-            </div>
-            <p class="review-quote">&ldquo;The service quality and staff readiness to attend to my needs were overwhelming. The location is perfect, and the atmosphere was excellent, with comfort and silence.&rdquo;</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Meeting Boardroom Spotlight -->
-    <section class="section-noir-alt" id="boardroom">
-      <div class="container">
-        <div class="meeting-wrapper" data-spring>
-          <div class="meeting-text-col">
-            <span class="section-subtitle">EXECUTIVE FACILITIES</span>
-            <h2 class="section-title">The SAAFI Boardroom</h2>
-            <p class="meeting-desc">Host high-level board meetings, investor presentations, and discreet conferences in our dedicated executive suite. Fully equipped with digital projection, conference Wi-Fi, ergonomic leather seating, and personalized catering breaks.</p>
-            <div class="meeting-features">
-              <div class="feat-item"><span>Capacity:</span> Up to 18 delegates</div>
-              <div class="feat-item"><span>Rate:</span> &#8358;250,000 / full day</div>
-              <div class="feat-item"><span>Includes:</span> AV Projection, Fiber Wi-Fi, Tea &amp; Pastry Break</div>
-            </div>
+          <div class="review-card">
             <div>
-              <a href="meetings.html" class="btn btn-brass">Explore Boardroom Details</a>
+              <div class="review-stars">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="review-quote">&ldquo;Excellent A-C, good Wi-Fi, strong water pressure and plenty of hot water. Spacious room, clean and modern (built in 2024), quiet and safe.&rdquo;</p>
+            </div>
+            <div class="review-author">
+              <div>
+                <span class="author-name">Matthew</span>
+                <span class="author-city">United States &bull; Verified Stay</span>
+              </div>
+              <span class="stay-badge">10 / 10</span>
             </div>
           </div>
-          <div class="meeting-image-col" style="background-image: url('https://img.sanishtech.com/u/544697eae7d086c29dca5568b399285f.jpeg');"></div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="review-quote">&ldquo;I truly appreciated the contemporary and elegant design of SAAFI Boutique Hotel. The meticulous attention to detail made for a luxurious experience. Staff was exceptional.&rdquo;</p>
+            </div>
+            <div class="review-author">
+              <div>
+                <span class="author-name">Suleiman</span>
+                <span class="author-city">United Kingdom &bull; Verified Stay</span>
+              </div>
+              <span class="stay-badge">10 / 10</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="review-quote">&ldquo;The food was reasonably priced and delicious. Central location in a quiet, safe neighborhood, and fantastic staff who attended to every request.&rdquo;</p>
+            </div>
+            <div class="review-author">
+              <div>
+                <span class="author-name">Chinaka</span>
+                <span class="author-city">United States &bull; Verified Stay</span>
+              </div>
+              <span class="stay-badge">9.5 / 10</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="review-quote">&ldquo;The service quality and staff readiness to attend to my needs were overwhelming. The location is perfect, and the atmosphere was excellent, with comfort and silence.&rdquo;</p>
+            </div>
+            <div class="review-author">
+              <div>
+                <span class="author-name">Abubakar</span>
+                <span class="author-city">United Kingdom &bull; Verified Stay</span>
+              </div>
+              <span class="stay-badge">9.8 / 10</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Dining Teaser Section -->
-    <section class="section-noir" id="dining">
-      <div class="container">
-        <div class="section-header" data-spring>
-          <span class="section-subtitle">CULINARY EXCELLENCE</span>
-          <h2 class="section-title">SAAFI Restaurant &amp; In-Room Dining</h2>
-          <p class="section-desc">Complimentary breakfast is served for every hotel guest from 7:00 AM to 11:00 AM. Our all-day dining menu features freshly prepared Nigerian and continental specialties in a calm, modern setting.</p>
-        </div>
-
-        <div class="dining-cards-grid">
-          <div class="dining-card" data-spring>
-            <div class="dining-card-img" style="background-image: url('https://img.sanishtech.com/u/69727a90e6efbc47df22b2b54a6bb0e4.jpeg');"></div>
-            <div class="dining-card-info">
-              <h4>Chef's Breakfast Table</h4>
-              <p>Fluffy omelettes, fresh seasonal fruits, golden toast, hot tea, brewed coffee, and Nigerian breakfast staples included with every stay.</p>
-            </div>
-          </div>
-          <div class="dining-card" data-spring style="transition-delay: 0.15s;">
-            <div class="dining-card-img" style="background-image: url('https://img.sanishtech.com/u/fac4a4792073a51abaf7f653e8062877.jpeg');"></div>
-            <div class="dining-card-info">
-              <h4>All-Day Dining &amp; Room Service</h4>
-              <p>Grilled catfish, goat meat pepper soup, tender beef suya, creamy pastas, club sandwiches, and chilled beverages delivered straight to your door.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 36px;" data-spring>
-          <a href="dining.html" class="btn btn-outline">Explore Full Dining Menu</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Location & Contact Section -->
-    <section class="section-stone" id="contact">
+    <!-- Location & Contact Preview -->
+    <section class="section section-page" id="contact">
       <div class="container">
         <div class="contact-grid">
-          <div class="contact-card" data-spring>
-            <span class="section-subtitle">VISIT SAAFI</span>
-            <h2 class="section-title">Quiet Street in Wuse 2</h2>
-            <p class="contact-desc">No. 6 Madiana Close, Off Dar es Salaam Crescent, Off Aminu Kano Crescent, Wuse 2, Abuja 904101, Nigeria.</p>
-            <div class="contact-lines">
-              <div class="contact-row">
-                <span class="label">Reservations &amp; WhatsApp:</span>
-                <a href="tel:+2348027777456" class="val">+234 802 777 7456</a>
+          <div class="contact-card">
+            <div class="badge-pill badge-coral-soft" style="margin-bottom:12px;">VISIT SAAFI</div>
+            <h2 class="section-title" style="margin-bottom:12px;">Quiet cul-de-sac in Wuse 2</h2>
+            <p class="section-desc" style="margin-bottom:28px;">No. 6 Madiana Close, Off Dar es Salaam Crescent, Off Aminu Kano Crescent, Wuse 2, Abuja 904101, Nigeria.</p>
+            <div class="contact-details-list">
+              <div class="contact-item">
+                <span class="label">Reservations &amp; WhatsApp</span>
+                <a href="tel:+2348027777456" class="value">+234 802 777 7456</a>
               </div>
-              <div class="contact-row">
-                <span class="label">Front Desk Secondary:</span>
-                <a href="tel:+2349031595162" class="val">+234 903 159 5162</a>
+              <div class="contact-item">
+                <span class="label">Front Desk Secondary</span>
+                <a href="tel:+2349031595162" class="value">+234 903 159 5162</a>
               </div>
-              <div class="contact-row">
-                <span class="label">Official Email:</span>
-                <a href="mailto:reservationsaafihotel@gmail.com" class="val">reservationsaafihotel@gmail.com</a>
+              <div class="contact-item">
+                <span class="label">Official Email</span>
+                <a href="mailto:reservationsaafihotel@gmail.com" class="value">reservationsaafihotel@gmail.com</a>
               </div>
-              <div class="contact-row">
-                <span class="label">Check-in / Check-out:</span>
-                <span class="val">Check-in 2:00 PM &bull; Check-out 12:00 PM</span>
+              <div class="contact-item">
+                <span class="label">Check-In / Check-Out</span>
+                <span class="value">Check-in 2:00 PM &bull; Check-out 12:00 PM</span>
               </div>
             </div>
-            <div class="contact-btn-row">
-              <a href="contact.html" class="btn btn-brass btn-full">Concierge &amp; Directions</a>
-              <a href="tel:+2348027777456" class="btn btn-outline-dark btn-full">Call 0802 777 7456</a>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a href="contact.html" class="btn btn-primary">Concierge &amp; Directions</a>
+              <a href="tel:+2348027777456" class="btn btn-outline">Call 0802 777 7456</a>
             </div>
           </div>
 
-          <div class="map-card" data-spring style="transition-delay: 0.15s;">
-            <iframe title="SAAFI Boutique Hotel Location Map" src="https://maps.google.com/maps?q=Dar%20es%20Salaam%20Crescent%2C%20Wuse%202%2C%20Abuja&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section-noir" id="faq">
-      <div class="container">
-        <div class="section-header" data-spring>
-          <span class="section-subtitle">GUEST INFORMATION</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-        </div>
-
-        <div class="faq-accordion" data-spring>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What is the check-in and check-out schedule?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Standard check-in begins at 2:00 PM. Check-out is at 12:00 PM (noon). Early check-in or late check-out can be requested in advance and is subject to room availability.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Is daily breakfast included with my room reservation?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Yes, full chef-prepared breakfast is included for all registered hotel guests daily from 7:00 AM until 11:00 AM at the SAAFI dining room or delivered via in-room dining.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>How does the 24/7 backup power work at SAAFI?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>We operate dual soundproof heavy-duty generators paired with commercial automated transfer switches, ensuring uninterrupted 24-hour air conditioning, lighting, hot water, and internet.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>How do I confirm my reservation and what payment methods are accepted?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>You can reserve instantly via WhatsApp (+234 802 777 7456) or by calling our front desk. We accept direct bank transfers, credit/debit cards (POS), and corporate vouchers.</p>
-            </div>
+          <div style="border-radius:var(--radius-3xl); overflow:hidden; min-height:400px; box-shadow:var(--shadow-card);">
+            <iframe title="SAAFI Boutique Hotel Location Map" src="https://maps.google.com/maps?q=Dar%20es%20Salaam%20Crescent%2C%20Wuse%202%2C%20Abuja&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; min-height:400px;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Site Footer -->
+  <!-- Site Footer (Rental X Style) -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-col">
-        <h3 class="footer-heading">SAAFI BOUTIQUE HOTEL</h3>
-        <p class="footer-desc">A contemporary boutique sanctuary built in 2024 on serene Madiana Close, off Dar es Salaam Crescent, Wuse 2, Abuja.</p>
-        <span class="footer-badge"><span class="badge-dot"></span> 24/7 Silent Generator Power</span>
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="brand-icon">S</span>
+          <div class="brand-text">
+            <span class="brand-title">SAAFI</span>
+            <span class="brand-sub">BOUTIQUE HOTEL</span>
+          </div>
+        </div>
+        <p>A contemporary boutique sanctuary built in 2024 on serene Madiana Close, off Dar es Salaam Crescent, Wuse 2, Abuja.</p>
+        <span class="badge-pill badge-coral-soft">24/7 Silent Generator Power</span>
       </div>
+
       <div class="footer-col">
-        <h4 class="col-title">Navigation</h4>
-        <ul class="footer-nav">
-          <li><a href="index.html">Overview</a></li>
-          <li><a href="rooms.html">Suites &amp; Residences</a></li>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Suites &amp; Rooms</a></li>
           <li><a href="dining.html">Dining &amp; Lounge</a></li>
-          <li><a href="meetings.html">Boardroom</a></li>
+          <li><a href="meetings.html">Executive Boardroom</a></li>
           <li><a href="contact.html">Concierge &amp; Contact</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4 class="col-title">Direct Reservations</h4>
+        <h4 class="footer-col-title">Direct Reservations</h4>
         <ul class="footer-contact-list">
-          <li><span>WhatsApp Desk:</span> <a href="https://wa.me/2348027777456">+234 802 777 7456</a></li>
-          <li><span>Front Desk Line:</span> <a href="tel:+2349031595162">+234 903 159 5162</a></li>
-          <li><span>Official Email:</span> <a href="mailto:reservationsaafihotel@gmail.com">reservationsaafihotel@gmail.com</a></li>
+          <li>
+            <strong>WhatsApp Desk:</strong>
+            <a href="https://wa.me/2348027777456">+234 802 777 7456</a>
+          </li>
+          <li>
+            <strong>Front Desk Line:</strong>
+            <a href="tel:+2349031595162">+234 903 159 5162</a>
+          </li>
+          <li>
+            <strong>Official Email:</strong>
+            <a href="mailto:reservationsaafihotel@gmail.com">reservationsaafihotel@gmail.com</a>
+          </li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4 class="col-title">Location</h4>
-        <address class="footer-address">
+        <h4 class="footer-col-title">Location</h4>
+        <p style="font-size:13.5px; line-height:1.6; color:var(--text-body);">
           No. 6 Madiana Close,<br>
           Off Dar es Salaam Crescent,<br>
           Off Aminu Kano Crescent,<br>
           Wuse 2, Abuja, Nigeria.
-        </address>
+        </p>
       </div>
     </div>
+
     <div class="container footer-bottom">
       <p>&copy; 2026 SAAFI Boutique Hotel. All rights reserved.</p>
       <p>Contemporary Luxury in Wuse 2, Abuja</p>
@@ -531,19 +565,10 @@
   </footer>
 
   <!-- Mobile Floating Action Bar -->
-  <div class="mobile-bar">
-    <a href="tel:+2348027777456" class="mobile-bar-btn">
-      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span>Call Desk</span>
-    </a>
-    <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn whatsapp">
-      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-      <span>WhatsApp</span>
-    </a>
-    <a href="rooms.html" class="mobile-bar-btn primary">
-      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <span>Reserve</span>
-    </a>
+  <div class="mobile-action-bar">
+    <a href="tel:+2348027777456" class="mobile-action-btn desk">Call Desk</a>
+    <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="mobile-action-btn whatsapp">WhatsApp</a>
+    <a href="rooms.html" class="mobile-action-btn reserve">Book now</a>
   </div>
 
   <script src="app.js"></script>
