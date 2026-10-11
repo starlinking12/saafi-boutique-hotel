@@ -113,6 +113,53 @@ const SUITES = {
   }
 };
 
+const MENU = [
+  {
+    category: 'Breakfast (Served 7:00 AM - 11:00 AM)',
+    items: [
+      { name: 'SAAFI Executive Continental', price: 'Complimentary for in-house guests', desc: 'Fresh farm eggs to order, toasted brioche, chicken sausages, baked beans, seasonal fruit platter, and freshly brewed coffee or artisan tea.' },
+      { name: 'Abuja Sunrise Yam & Egg Medley', price: 'Complimentary for in-house guests', desc: 'Golden fried or boiled sweet yam with garden egg sauce or spicy peppered scrambled eggs.' },
+      { name: 'Oatmeal & Wild Honey Bowl', price: 'Complimentary for in-house guests', desc: 'Rolled oats simmered in warm milk or almond milk, topped with toasted nuts, raisins, and pure honey.' }
+    ]
+  },
+  {
+    category: 'Chef Special Starters & Soups',
+    items: [
+      { name: 'Spicy Catfish Pepper Soup', price: '₦9,500', desc: 'Fresh point-and-kill catfish simmered in aromatic native spices, calabash nutmeg, and fresh scent leaves.' },
+      { name: 'Goat Meat Asun Pepper Soup', price: '₦8,500', desc: 'Slow-charred tender goat meat pieces in a rich, spicy broth with scotch bonnet pepper.' },
+      { name: 'Crispy Calamari & Citrus Mayo', price: '₦10,500', desc: 'Tender squid rings dusted in seasoned semolina, flash fried, served with house garlic-lime dip.' }
+    ]
+  },
+  {
+    category: 'Mains & Traditional Specialties',
+    items: [
+      { name: 'Whole Grilled Croaker Fish & Plantain', price: '₦18,500', desc: 'Marinated in spicy suya barbecue glaze, served with grilled yellow plantain, house slaw, and chilli dip.' },
+      { name: 'Smoked Jollof Rice with Jumbo Prawns', price: '₦16,000', desc: 'Firewood-aroma basmati jollof rice paired with spiced grilled jumbo prawns and sweet dodo.' },
+      { name: 'Pounded Yam with Seafood Okro', price: '₦19,500', desc: 'Velvety smooth pounded yam served with fresh crab, tiger prawns, calamari, and fresh fish.' },
+      { name: 'Ribeye Steak & Truffle Wedges', price: '₦24,000', desc: 'Prime 300g beef ribeye char-grilled to temperature, rosemary jus, and crispy hand-cut wedges.' }
+    ]
+  }
+];
+
+const FAQS = [
+  {
+    q: 'What is the check-in and check-out schedule?',
+    a: 'Standard check-in begins at 2:00 PM. Check-out is at 12:00 PM (noon). Early check-in or late check-out can be requested in advance and is subject to room availability on the day.'
+  },
+  {
+    q: 'Is daily breakfast included with my room reservation?',
+    a: 'Yes, full chef-prepared breakfast is included for all registered hotel guests daily from 7:00 AM until 11:00 AM at the SAAFI dining room or delivered via in-room dining.'
+  },
+  {
+    q: 'How does the 24/7 backup power work at SAAFI?',
+    a: 'We operate dual soundproof heavy-duty generators paired with commercial automated transfer switches, ensuring uninterrupted 24-hour air conditioning, lighting, hot water, and internet.'
+  },
+  {
+    q: 'How do I confirm my reservation and what payment methods are accepted?',
+    a: 'You can reserve instantly via WhatsApp (+234 802 777 7456) or by calling our front desk. We accept direct bank transfers, credit/debit cards (POS), and corporate vouchers.'
+  }
+];
+
 function initSpringObserver() {
   const elements = document.querySelectorAll('[data-spring]');
   const observer = new IntersectionObserver((entries) => {
@@ -122,9 +169,22 @@ function initSpringObserver() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
 
   elements.forEach((el) => observer.observe(el));
+}
+
+function initFaqAccordions() {
+  document.querySelectorAll('.faq-question').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach((i) => i.classList.remove('active'));
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    });
+  });
 }
 
 function renderOverview() {
@@ -132,15 +192,15 @@ function renderOverview() {
   if (!container) return;
   container.innerHTML = `
     <!-- Hero Section -->
-    <section class="hero-section" id="overview">
-      <div class="hero-bg" style="background-image: linear-gradient(180deg, rgba(13, 14, 17, 0.4) 0%, rgba(13, 14, 17, 0.95) 100%), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=85');"></div>
+    <section class="hero-section" id="hero">
+      <div class="hero-bg" style="background-image: linear-gradient(180deg, rgba(13, 14, 17, 0.45) 0%, rgba(13, 14, 17, 0.96) 100%), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=85');"></div>
       <div class="container hero-content">
         <div class="hero-tagline" data-spring>
           <span class="tag-line-dot"></span>
           <span>AN INTIMATE 22-ROOM RETREAT IN WUSE 2, ABUJA</span>
         </div>
         <h1 class="hero-title" data-spring>Quiet Luxury,<br>Crafted For The Discerning.</h1>
-        <p class="hero-sub" data-spring>Tucked into peaceful Madiana Close, off Dar es Salaam Crescent. Experience serene hospitality, bespoke suites, and 24/7 uncompromised comfort.</p>
+        <p class="hero-sub" data-spring>Tucked into peaceful Madiana Close, off Dar es Salaam Crescent. Experience serene hospitality, bespoke suites, and 24/7 uncompromised comfort in the diplomatic heart of Abuja.</p>
         
         <!-- Booking Bar -->
         <div class="booking-card" id="booking" data-spring>
@@ -172,7 +232,7 @@ function renderOverview() {
               </select>
             </div>
             <div class="booking-submit">
-              <button class="btn btn-gold btn-full" id="bookingSubmitBtn">Reserve Direct</button>
+              <button class="btn btn-brass btn-full" id="bookingSubmitBtn">Reserve Direct</button>
             </div>
           </div>
         </div>
@@ -180,7 +240,7 @@ function renderOverview() {
     </section>
 
     <!-- Suites Showcase Section -->
-    <section class="suites-section" id="suites">
+    <section class="section-stone" id="suites">
       <div class="container">
         <div class="section-header" data-spring>
           <span class="section-subtitle">THE RESIDENCES</span>
@@ -206,8 +266,8 @@ function renderOverview() {
                   <span>${suite.size}</span>
                 </div>
                 <div class="suite-card-actions">
-                  <a href="#suite/${slug}" class="btn btn-outline btn-full">View Suite Specs</a>
-                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(suite.title)}%20at%20%E2%82%A6${suite.priceFormatted}%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">Reserve on WhatsApp</a>
+                  <a href="#suite/${slug}" class="btn btn-outline-dark btn-full">View Suite Specs</a>
+                  <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(suite.title)}%20at%20%E2%82%A6${suite.priceFormatted}%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Reserve on WhatsApp</a>
                 </div>
               </div>
             </div>
@@ -217,7 +277,7 @@ function renderOverview() {
     </section>
 
     <!-- Everything You Need Amenities -->
-    <section class="amenities-section" id="amenities">
+    <section class="section-noir" id="amenities">
       <div class="container">
         <div class="section-header text-center" data-spring>
           <span class="section-subtitle">THE SAAFI STANDARD</span>
@@ -248,26 +308,30 @@ function renderOverview() {
       </div>
     </section>
 
-    <!-- Meeting Boardroom Spotlight -->
-    <section class="meeting-section" id="meeting">
-      <div class="container meeting-wrapper" data-spring>
-        <div class="meeting-text-col">
-          <span class="section-subtitle">EXECUTIVE FACILITIES</span>
-          <h2 class="section-title">The SAAFI Boardroom</h2>
-          <p class="meeting-desc">Host high-level board meetings, private investor presentations, and discreet conferences in our dedicated executive suite. Fully equipped with high-lumen digital projection, conference Wi-Fi, and personalized coffee service.</p>
-          <div class="meeting-features">
-            <div class="feat-item"><span>Capacity:</span> Up to 18 delegates</div>
-            <div class="feat-item"><span>Rate:</span> &#8358;250,000 / full day</div>
-            <div class="feat-item"><span>Includes:</span> AV Projection, High-Speed Wi-Fi, Tea &amp; Pastry Break</div>
+    <!-- Meeting Boardroom Section -->
+    <section class="section-noir-alt" id="boardroom">
+      <div class="container">
+        <div class="meeting-wrapper" data-spring>
+          <div class="meeting-text-col">
+            <span class="section-subtitle">EXECUTIVE FACILITIES</span>
+            <h2 class="section-title">The SAAFI Boardroom</h2>
+            <p class="meeting-desc">Host high-level board meetings, private investor presentations, and discreet conferences in our dedicated executive suite. Fully equipped with high-lumen digital projection, conference Wi-Fi, and personalized coffee service.</p>
+            <div class="meeting-features">
+              <div class="feat-item"><span>Capacity:</span> Up to 18 delegates</div>
+              <div class="feat-item"><span>Rate:</span> &#8358;250,000 / full day</div>
+              <div class="feat-item"><span>Includes:</span> AV Projection, High-Speed Wi-Fi, Tea &amp; Pastry Break</div>
+            </div>
+            <div>
+              <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20book%20the%20Meeting%20Boardroom%20at%20%E2%82%A6250%2C000%2Fday." target="_blank" rel="noopener noreferrer" class="btn btn-brass">Book Boardroom on WhatsApp</a>
+            </div>
           </div>
-          <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20book%20the%20Meeting%20Boardroom%20at%20%E2%82%A6250%2C000%2Fday." target="_blank" rel="noopener noreferrer" class="btn btn-gold">Book Boardroom</a>
+          <div class="meeting-image-col" style="background-image: url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=85');"></div>
         </div>
-        <div class="meeting-image-col" style="background-image: url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=85');"></div>
       </div>
     </section>
 
-    <!-- Dining Preview Section -->
-    <section class="dining-section" id="dining">
+    <!-- Dining Section -->
+    <section class="section-noir" id="dining">
       <div class="container">
         <div class="section-header" data-spring>
           <span class="section-subtitle">CULINARY EXCELLENCE</span>
@@ -290,41 +354,69 @@ function renderOverview() {
             </div>
           </div>
         </div>
+        <div style="margin-top: 36px;" data-spring>
+          <a href="#dining-menu" class="btn btn-outline">Explore Full Dining Menu</a>
+        </div>
       </div>
     </section>
 
     <!-- Location & Contact Section -->
-    <section class="contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-card" data-spring>
-          <span class="section-subtitle">VISIT SAAFI</span>
-          <h2 class="section-title">Quiet Street in Wuse 2</h2>
-          <p class="contact-desc">No. 6 Madiana Close, Off Dar es Salaam Crescent, Off Aminu Kano Crescent, Wuse 2, Abuja 904101, Nigeria.</p>
-          <div class="contact-lines">
-            <div class="contact-row">
-              <span class="label">Reservations &amp; WhatsApp:</span>
-              <a href="tel:+2348027777456" class="val">+234 802 777 7456</a>
+    <section class="section-stone" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card" data-spring>
+            <span class="section-subtitle">VISIT SAAFI</span>
+            <h2 class="section-title">Quiet Street in Wuse 2</h2>
+            <p class="contact-desc">No. 6 Madiana Close, Off Dar es Salaam Crescent, Off Aminu Kano Crescent, Wuse 2, Abuja 904101, Nigeria.</p>
+            <div class="contact-lines">
+              <div class="contact-row">
+                <span class="label">Reservations &amp; WhatsApp:</span>
+                <a href="tel:+2348027777456" class="val">+234 802 777 7456</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">Front Desk Secondary:</span>
+                <a href="tel:+2349031595162" class="val">+234 903 159 5162</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">Official Email:</span>
+                <a href="mailto:reservationsaafihotel@gmail.com" class="val">reservationsaafihotel@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">Check-in / Check-out:</span>
+                <span class="val">Check-in 2:00 PM &bull; Check-out 12:00 PM</span>
+              </div>
             </div>
-            <div class="contact-row">
-              <span class="label">Front Desk Secondary:</span>
-              <a href="tel:+2349031595162" class="val">+234 903 159 5162</a>
-            </div>
-            <div class="contact-row">
-              <span class="label">Official Email:</span>
-              <a href="mailto:reservationsaafihotel@gmail.com" class="val">reservationsaafihotel@gmail.com</a>
-            </div>
-            <div class="contact-row">
-              <span class="label">Check-in / Check-out:</span>
-              <span class="val">Check-in 2:00 PM &bull; Check-out 12:00 PM</span>
+            <div class="contact-btn-row">
+              <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">Chat with Front Desk</a>
+              <a href="tel:+2348027777456" class="btn btn-outline-dark btn-full">Call 0802 777 7456</a>
             </div>
           </div>
-          <div class="contact-btn-row">
-            <a href="https://wa.me/2348027777456" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">Chat with Front Desk</a>
-            <a href="tel:+2348027777456" class="btn btn-outline btn-full">Call 0802 777 7456</a>
+          <div class="map-card" data-spring style="transition-delay: 0.15s;">
+            <iframe title="SAAFI Boutique Hotel Location Map" src="https://maps.google.com/maps?q=Dar%20es%20Salaam%20Crescent%2C%20Wuse%202%2C%20Abuja&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        <div class="map-card" data-spring style="transition-delay: 0.15s;">
-          <iframe title="SAAFI Boutique Hotel Location Map" src="https://maps.google.com/maps?q=Dar%20es%20Salaam%20Crescent%2C%20Wuse%202%2C%20Abuja&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-noir" id="faq">
+      <div class="container">
+        <div class="section-header" data-spring>
+          <span class="section-subtitle">GUEST INFORMATION</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion" data-spring>
+          ${FAQS.map((faq) => `
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>${faq.q}</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>${faq.a}</p>
+              </div>
+            </div>
+          `).join('')}
         </div>
       </div>
     </section>
@@ -341,6 +433,7 @@ function renderOverview() {
   });
 
   initSpringObserver();
+  initFaqAccordions();
 }
 
 function renderSuiteDetail(slug) {
@@ -353,7 +446,7 @@ function renderSuiteDetail(slug) {
   }
 
   container.innerHTML = `
-    <article class="suite-detail-view">
+    <article class="subroute-view section-noir">
       <div class="container suite-breadcrumb">
         <a href="#suites" class="back-link">&larr; All Suites &amp; Residences</a>
       </div>
@@ -377,13 +470,31 @@ function renderSuiteDetail(slug) {
             `).join('')}
           </div>
 
-          <div class="suite-amenities-section" data-spring>
+          <div class="suite-section-block" data-spring>
             <h2 class="sub-heading">Suite Amenities &amp; Inclusions</h2>
             <div class="amenities-checklist">
               ${suite.amenities.map(item => `
                 <div class="check-item">
                   <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                   <span>${item}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- In-Suite FAQ -->
+          <div class="suite-section-block" data-spring>
+            <h2 class="sub-heading">Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+              ${FAQS.map(faq => `
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>${faq.q}</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>${faq.a}</p>
+                  </div>
                 </div>
               `).join('')}
             </div>
@@ -399,7 +510,7 @@ function renderSuiteDetail(slug) {
             </div>
             <p class="card-policy">Best rate guaranteed when booking directly with the hotel desk.</p>
             <div class="sidebar-actions">
-              <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(suite.title)}%20at%20%E2%82%A6${suite.priceFormatted}%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">
+              <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Boutique%20Hotel%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(suite.title)}%20at%20%E2%82%A6${suite.priceFormatted}%20per%20night." target="_blank" rel="noopener noreferrer" class="btn btn-brass btn-full">
                 Reserve on WhatsApp
               </a>
               <a href="tel:+2348027777456" class="btn btn-outline btn-full">
@@ -428,6 +539,53 @@ function renderSuiteDetail(slug) {
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
   initSpringObserver();
+  initFaqAccordions();
+}
+
+function renderDiningMenu() {
+  const container = document.getElementById('dynamicView');
+  if (!container) return;
+
+  container.innerHTML = `
+    <article class="subroute-view section-noir">
+      <div class="container suite-breadcrumb">
+        <a href="#dining" class="back-link">&larr; Return to Dining Overview</a>
+      </div>
+      <div class="container subroute-hero" data-spring>
+        <span class="section-subtitle">CULINARY MENU</span>
+        <h1 class="suite-view-title">SAAFI Restaurant &amp; In-Room Dining Menu</h1>
+        <p class="suite-view-sub">All meals are freshly prepared to order by our resident culinary team using seasonal local produce and prime cuts. Available for restaurant dining and 24-hour room delivery.</p>
+      </div>
+
+      <div class="container">
+        ${MENU.map((section) => `
+          <div class="menu-category-block" data-spring>
+            <h2 class="category-title">${section.category}</h2>
+            <div class="menu-items-grid">
+              ${section.items.map((item) => `
+                <div class="menu-item-card">
+                  <div>
+                    <div class="item-top">
+                      <h3 class="item-name">${item.name}</h3>
+                      <span class="item-price">${item.price}</span>
+                    </div>
+                    <p class="item-desc">${item.desc}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `).join('')}
+
+        <div style="text-align: center; margin-top: 48px;" data-spring>
+          <a href="https://wa.me/2348027777456?text=Hello%20SAAFI%20Dining%2C%20I%20would%20like%20to%20place%20a%20food%20order." target="_blank" rel="noopener noreferrer" class="btn btn-brass">Place Dining Order on WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  `;
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  initSpringObserver();
 }
 
 function handleRouting() {
@@ -435,6 +593,8 @@ function handleRouting() {
   if (hash.startsWith('#suite/')) {
     const slug = hash.replace('#suite/', '');
     renderSuiteDetail(slug);
+  } else if (hash === '#dining-menu') {
+    renderDiningMenu();
   } else {
     renderOverview();
     if (hash && hash !== '#' && document.querySelector(hash)) {
