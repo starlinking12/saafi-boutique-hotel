@@ -1,2 +1,10 @@
-/* SAAFI Boutique Hotel - Design System & Spring Motion */
-/* Reference: https://thehotel.framer.website/ */
+/* SAAFI Boutique Hotel - Luxury System */
+body {
+  margin: 0;
+  background: #0D
+E13;
+  color: #F8F7F4;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
